@@ -16,7 +16,7 @@
 
     </div>
     <div class="col-xs-12 col-sm-6 col-md-8">
-        <ul>
+        <ul class="media-list">
             <li class="col-xs-6 col-sm-4" ng-repeat="product in products | filter:query | orderBy:orderProp">
                 <h3><a href="#/main/{{ product.id }}">{{ product.properties.name }}</a></h3>
                 <img ng-src="{{ product.properties.images[0] }}" alt="{{ product.properties.name }}" class="img-thumbnail" />

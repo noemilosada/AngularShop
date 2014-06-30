@@ -1,12 +1,19 @@
-<div class="row">
-    <div class="col-xs-6 col-md-6">
+<div class="row well">
+    <div class="col-xs-6 col-md-6 col-sm-6">
         <h2>{{ product.name }}</h2>
         <p>{{ product.description }}</p>
-        <p>{{ product.price.normalPrice | number:2 | currency:"£"}}</p>
+        <p class="badge">{{ product.price.normalPrice | number:2 | currency:"£"}}</p>
     </div>
 
-    <div class="col-xs-6 col-md-6">
-        <img ng-src="{{ product.images[0] }}" alt="{{ product.name }}" class="img-rounded img-responsive" />
+    <div class="col-xs-6 col-md-6 col-sm-6">
+        <img ng-src="{{ product.images[0] }}" alt="{{ product.name }}" class="img-rounded img-responsive thumbnail" />
+        <ul class="row media-list">
+            <li ng-repeat="img in product.images track by $index" class="col-md-3 col-sm-3 col-xs-3">
+                <a href="" title="{{ product.name }}" class="thumbnail">
+                    <img ng-src="{{ img  }}" alt="{{ product.name}}" class="img-responsive" />
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 
