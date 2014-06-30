@@ -1,0 +1,17 @@
+{
+    "categories":
+    [
+       {
+        "id": 0,
+        "name": "accessories",
+        "description": "In accessories you can find the best quality materials, your cat would be happy with any of this amazing products.",
+        "image": "default.jpg"
+       },
+       {
+        "id": 1,
+        "name": "food",
+        "description": "In food you will find the best seleccion of meat and fish for your cat. A healthy and the best quality food.",
+        "image": "default.jpg"
+       }
+    ]
+}

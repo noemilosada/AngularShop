@@ -1,0 +1,162 @@
+{
+  "products": [
+    {
+      "id": 10,
+      "properties":
+      {
+        "name": "Boo zbed",
+        "description": "Boo zbed is the most cool and confortable bed for your cat.",
+        "category": "accessories",
+        "price":
+        {
+          "normalPrice": 30.00
+        },
+        "attributes":
+        {
+          "color": "blue",
+          "material": "plastic",
+          "brand": "BooTheCat"
+        },
+        "images":
+        [
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg"
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "properties":
+      {
+        "name": "Boo food",
+        "description": "Boo food is a selection from the best quality of meat for your cat. He or she would love it!",
+        "category": "food",
+        "price":
+        {
+          "normalPrice": 50.00
+        },
+        "attributes":
+        {
+          "weight": 10,
+          "material": "organic",
+          "brand": "BooTheFood"
+        },
+        "images":
+        [
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "properties":
+      {
+        "name": "BooGame",
+        "description": "Boo game is an exciting way to play with your cat. This game makes an strong relationship between the cat and the owner.",
+        "category": "accessories",
+        "price":
+        {
+          "normalPrice": 20.00
+        },
+        "attributes":
+        {
+          "color": "blue",
+          "material": "plastic",
+          "brand": "BooTheCat"
+        },
+        "images":
+        [
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "properties":
+      {
+        "name": "Boo rat",
+        "description": "Boo rat is a beautiful accesory that all cats must own. Your cat will play for hours!",
+        "category": "accessories",
+        "price":
+        {
+          "normalPrice": 1.50
+        },
+        "attributes":
+        {
+          "color": "black",
+          "material": "plastic",
+          "brand": "BooTheCat"
+        },
+        "images":
+        [
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "properties":
+      {
+        "name": "Boo rev.",
+        "description": "Boo food revolution is a selection from the best quality of fish for your cat. He or she would love it!",
+        "category": "food",
+        "price":
+        {
+          "normalPrice": 50.00,
+          "specialPrice": 39.99
+        },
+        "attributes":
+        {
+          "weight": 10,
+          "material": "organic",
+          "brand": "BooTheFood"
+        },
+        "images":
+        [
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "properties":
+      {
+        "name": "Boo air",
+        "description": "Boo air revolution is a selection from the best quality of fish for your cat. He or she would love it!",
+        "category": "food",
+        "price":
+        {
+          "normalPrice": 45.00,
+          "specialPrice": 39.99
+        },
+        "attributes":
+        {
+          "weight": 5,
+          "material": "organic",
+          "brand": "BooTheFood"
+        },
+        "images":
+        [
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg",
+            "images/default.jpg"
+        ]
+      }
+    }
+  ]
+}

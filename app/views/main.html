@@ -1,0 +1,27 @@
+<div class="jumbotron">
+  <h1>Welcome to AngularShop</h1>
+</div>
+
+<div class="row">
+    <div class="col-xs-6 col-md-4">
+      <!--Sidebar content-->
+
+      <span>Search:</span> <input ng-model="query">
+      <br />
+      <span>Sort by:</span>
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="id">Newest</option>
+      </select>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <ul>
+            <li class="col-xs-6 col-sm-4" ng-repeat="product in products | filter:query | orderBy:orderProp">
+                <h3><a href="#/main/{{ product.id }}">{{ product.properties.name }}</a></h3>
+                <img ng-src="{{ product.properties.images[0] }}" alt="{{ product.properties.name }}" class="img-thumbnail" />
+                <p>&pound;{{ product.properties.price.normalPrice | number:2 }}</p>
+            </li>
+        </ul>
+    </div>
+</div>

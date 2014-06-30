@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-xs-6 col-md-6">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>{{ product.price.normalPrice | number:2 | currency:"£"}}</p>
+    </div>
+
+    <div class="col-xs-6 col-md-6">
+        <img ng-src="{{ product.images[0] }}" alt="{{ product.name }}" class="img-rounded img-responsive" />
+    </div>
+</div>
+
