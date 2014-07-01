@@ -13,15 +13,6 @@
 var angularShopController = angular.module('angularShopAppController', []);
 
 /**
- * Retrieve categories json data 
- */
-angularShopController.controller('CategoriesController', ['$scope', '$http', function($scope, $http) {
-   $http.get('scripts/jsonData/categories.json').success(function(response) {
-        $scope.categories = response.categories;
-   });
-}]);
-
-/**
  * Retrieve all products
  */
 angularShopController.controller('ProductsController', ['$scope', '$http', function($scope, $http) {

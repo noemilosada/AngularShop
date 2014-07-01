@@ -1,22 +1,40 @@
+/**
+ * Test cases for AngularShop Controllers
+ */
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('AngularShop Controllers', function() {
 
-  // load the controller's module
-  beforeEach(module('angularShopApp'));
+    // Products Controller
+    describe('ProductsController', function() {
+        var scope, productsCtrl, $httpBackend;
 
-  var MainCtrl,
-    scope;
+        // Load app module
+        beforeEach(module('angularShopAppController'));
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
+        beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+            $httpBackend = _$httpBackend_;
+            $httpBackend.expectGET('scripts/jsonData/products.json').respond(
+                {"products": [{"id": 10}, {"id": 1}]}
+            );
+
+            scope = $rootScope.$new();
+            productsCtrl = $controller('ProductsController', {$scope: scope});
+        }));
+
+        it('Should create "products" model with 2 products fetched from xhr', function() {
+            expect(scope.products).toBeUndefined();
+            $httpBackend.flush();
+
+            expect(scope.products).toEqual(
+                [{"id": 10}, {"id": 1}]
+            );
+        });
+
+        it('Should set the default value of orderProp model to name', function() {
+            expect(scope.orderProp).toBe('name');
+        });
+
     });
-  }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
 });
